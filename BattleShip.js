@@ -30,11 +30,11 @@ while(IsSunk == false) {
 			}else{
 				alert("Мимо! Попробуй еще раз!");
 			}
-			if(hits == 3){
+				if(hits == 3){
 					IsSunk == true;
-					if(shots > 4){
-						VinMessege = " попыток";
-					}
+						if(shots > 4){
+							VinMessege = " попыток";
+						}
 					alert("Победа! Корабль потоплен за " + shots + VinMessege +" ! Хочешь сыграть еще раз?");
 					shots = 0;
 					hits = 0;
