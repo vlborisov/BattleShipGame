@@ -1,4 +1,5 @@
 var numbers = [1, 2, 3, 4, 5, 6, 7];
+var count = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9,]
 var rand = Math.floor(Math.random() * numbers.length);
 var pos_1 = rand;
 var pos_2 = pos_1 +1 ;
@@ -15,7 +16,7 @@ var IsSunk = false;
 
 while(IsSunk == false) {
 	TryToHit = prompt("Попытй удачу! Попробуй попасть по кораблю! Введите цифру от 0 до 9!");
-	if(TryToHit < 0 || TryToHit > 9 || TryToHit == null){
+	if(TryToHit < 0 || TryToHit > 9 || isNaN(TryToHit) || TryToHit == null){
 		alert("Видимо мы друг друга не поняли! Введите цифру от 0 до 9!");
 	}else{
 		shots += 1;
