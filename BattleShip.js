@@ -31,18 +31,18 @@ while(IsSunk == false) {
 				alert("Мимо! Попробуй еще раз!");
 			}
 			if(hits == 3){
-					IsSunk == true;
+				IsSunk == true;
 					if(shots > 4){
 						VinMessege = " попыток";
 					}
-					alert("Победа! Корабль потоплен за " + shots + VinMessege +" ! Хочешь сыграть еще раз?");
-					shots = 0;
-					hits = 0;
-					a = [];
-					rand = Math.floor(Math.random() * numbers.length);
-					pos_1 = numbers[rand];
-					pos_2 = pos_1 +1 ;
-					pos_3 = pos_2 + 1;
+				alert("Победа! Корабль потоплен за " + shots + VinMessege +" ! Хочешь сыграть еще раз?");
+				shots = 0;
+				hits = 0;
+				a = [];
+				rand = Math.floor(Math.random() * numbers.length);
+				pos_1 = numbers[rand];
+				pos_2 = pos_1 +1 ;
+				pos_3 = pos_2 + 1;
 			}
 		}
 	}
