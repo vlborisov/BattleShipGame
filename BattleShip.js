@@ -1,5 +1,6 @@
-var rand = Math.floor(Math.random() * 7);
-var pos_1 = rand;
+var numbers = [1, 2, 3, 4, 5, 6, 7];
+var rand = Math.floor(Math.random() * numbers.length);
+var pos_1 = numbers[rand];
 var pos_2 = pos_1 +1 ;
 var pos_3 = pos_2 + 1;
 var a = [];
@@ -29,21 +30,20 @@ while(IsSunk == false) {
 			}else{
 				alert("Мимо! Попробуй еще раз!");
 			}
-				if(hits == 3){
+			if(hits == 3){
 					IsSunk == true;
-						if(shots > 4){
-							VinMessege = " попыток";
-						}
+					if(shots > 4){
+						VinMessege = " попыток";
+					}
 					alert("Победа! Корабль потоплен за " + shots + VinMessege +" ! Хочешь сыграть еще раз?");
 					shots = 0;
 					hits = 0;
 					a = [];
-					rand = Math.floor(Math.random() * 7);
-					pos_1 = rand;
+					rand = Math.floor(Math.random() * numbers.length);
+					pos_1 = numbers[rand];
 					pos_2 = pos_1 +1 ;
 					pos_3 = pos_2 + 1;
 			}
 		}
 	}
 }
-
