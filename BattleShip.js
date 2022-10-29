@@ -1,5 +1,4 @@
 var numbers = [1, 2, 3, 4, 5, 6, 7];
-var count = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9,]
 var rand = Math.floor(Math.random() * numbers.length);
 var pos_1 = rand;
 var pos_2 = pos_1 +1 ;
