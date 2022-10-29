@@ -1,5 +1,4 @@
-var numbers = [1, 2, 3, 4, 5, 6, 7];
-var rand = Math.floor(Math.random() * numbers.length);
+var rand = Math.floor(Math.random() * 7);
 var pos_1 = rand;
 var pos_2 = pos_1 +1 ;
 var pos_3 = pos_2 + 1;
@@ -39,7 +38,7 @@ while(IsSunk == false) {
 					shots = 0;
 					hits = 0;
 					a = [];
-					rand = Math.floor(Math.random() * numbers.length);
+					rand = Math.floor(Math.random() * 7);
 					pos_1 = rand;
 					pos_2 = pos_1 +1 ;
 					pos_3 = pos_2 + 1;
