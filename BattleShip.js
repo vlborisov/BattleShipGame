@@ -31,14 +31,14 @@ while(IsSunk == false) {
 			if (TryToHit == pos_1 || TryToHit == pos_2 || TryToHit == pos_3) {
 				a.push(TryToHit);
 				hits += 1;
-				alert("Есть попадание! Продолжай в том же духе.");
+				alert("Есть попадание! Продолжай в том же духе!");
 			}else{
 				alert("Мимо! Попробуй еще раз!");
 			}
 				if(hits == 3){
 						IsSunk == true;
 						if(shots > 4){
-							VinMessege = " попыток";
+							VinMessege = " попыток ";
 						}
 							if (window.confirm("Победа! Корабль потоплен за " + shots + VinMessege +" ! Хочешь сыграть еще раз?")){
 								shots = 0;
