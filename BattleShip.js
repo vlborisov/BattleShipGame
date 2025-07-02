@@ -38,7 +38,7 @@ while(IsSunk == false) {
 				if(hits == 3){
 						IsSunk == true;
 						if(shots > 4){
-							VinMessege = " попыток";
+							VinMessege = " попыток ";
 						}
 							if (window.confirm("Победа! Корабль потоплен за " + shots + VinMessege +" ! Хочешь сыграть еще раз?")){
 								shots = 0;
