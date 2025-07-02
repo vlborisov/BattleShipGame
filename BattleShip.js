@@ -50,7 +50,7 @@ while(IsSunk == false) {
 								pos_3 = pos_2 + 1;
 								IsSunk == false;
 						 	}else{
-								alert("Пока! Буду ждать твоего возвращения :)");
+								alert("Пока! Буду ждать твоего возвращения :В");
 								Window.close();
 							}
 							
